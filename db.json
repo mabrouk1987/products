@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Clavier",
+      "price": 1200,
+      "quantity": 500,
+      "selected": true,
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Souri",
+      "price": 800,
+      "quantity": 1000,
+      "selected": true,
+      "available": true
+    },
+    {
+      "id": 3,
+      "name": "Ordinateur",
+      "price": 1500,
+      "quantity": 50,
+      "selected": true,
+      "available": true
+    },
+    {
+      "name": "Cable",
+      "price": "20",
+      "quantity": "600",
+      "selected": true,
+      "available": true,
+      "id": 4
+    }
+  ]
+}
