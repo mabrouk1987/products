@@ -1,0 +1,12 @@
+<tr *ngIf="product">
+  <td>{{ product.id }}</td>
+  <td>{{ product.name }}</td>
+  <td>{{ product.price }}</td>
+  <td>{{ product.quantity }}</td>
+  <td>{{ product.selected }}</td>
+  <td>{{ product.available }}</td>
+  <app-product-actions
+    [product]="product"
+    (productActionsEventEmitter)="onActionEvent($event)">
+  </app-product-actions>
+</tr>

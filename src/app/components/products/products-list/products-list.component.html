@@ -1,0 +1,32 @@
+<ng-container *ngIf="productsInput$ | async as result" [ngSwitch]="result.dataState">
+  <ng-container *ngSwitchCase="dataStateEnum.LOADING">
+    Chargement en cours...
+  </ng-container>
+  <ng-container *ngSwitchCase="dataStateEnum.ERROR">
+    Un erreur est survenu!!!
+  </ng-container>
+  <ng-container *ngSwitchCase="dataStateEnum.LOADED">
+    <div class="container" *ngIf="productsInput$">
+      <table class="table" aria-label="Table of products">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Label</th>
+            <th scope="col">Prix</th>
+            <th scope="col">Quantité</th>
+            <th scope="col">Selectionner</th>
+            <th scope="col">Disponible</th>
+          </tr>
+        </thead>
+        <tbody>
+          <app-product-item
+          [product]="product"
+          (eventEmitter)="onActionEvent($event)"
+          *ngFor="let product of result.data" style="display: contents;">
+        </app-product-item>
+        </tbody>
+      </table>
+    </div>
+  </ng-container>
+
+</ng-container>

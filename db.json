@@ -1,12 +1,12 @@
 {
   "products": [
     {
-      "id": 1,
       "name": "Clavier",
       "price": 1200,
       "quantity": 500,
       "selected": true,
-      "available": true
+      "available": true,
+      "id": 1
     },
     {
       "id": 2,
@@ -17,12 +17,12 @@
       "available": true
     },
     {
-      "id": 3,
       "name": "Ordinateur",
       "price": 1500,
       "quantity": 50,
-      "selected": true,
-      "available": true
+      "selected": false,
+      "available": true,
+      "id": 3
     },
     {
       "name": "Cable",

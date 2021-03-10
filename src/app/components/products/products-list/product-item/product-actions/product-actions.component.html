@@ -1,0 +1,20 @@
+<td>
+  <boutton class="btn btn-sm btn-primary"
+  (click)="onSelect(product)"
+  [ngClass]="product.selected?'btn-success':'btn-danger'">
+    <span *ngIf="product.selected">Unselect</span>
+    <span *ngIf="!product.selected">Select</span>
+  </boutton>
+</td>
+<td>
+  <boutton class="btn btn-sm btn-primary"
+  (click)="onDelete(product)">
+    <span class="fa fa-trash-o"></span>
+  </boutton>
+</td>
+<td>
+  <boutton class="btn btn-sm btn-primary"
+  (click)="onEdit(product)">
+    <span class="fa fa-edit"></span>
+  </boutton>
+</td>
